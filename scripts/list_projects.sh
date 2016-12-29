@@ -2,7 +2,7 @@
 
 set -e
 
-API_KEY=$(cat config.json | jq -r '. | .api_key')
+API_KEY=$(cat ../config.json | jq -r '. | .api_key')
 echo $API_KEY
 
 node -pe 'JSON.parse(process.argv[1]).list' "$(curl -X POST https://poeditor.com/api/ \
