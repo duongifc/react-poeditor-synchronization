@@ -4,5 +4,5 @@
   "languages": "en,vi",
   "file_format": "android_strings",
   "file_name": "Localize",
-  "path": "../DATA_SJ"
+  "path": "../../../src/i18n"
 }
