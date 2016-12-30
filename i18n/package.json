@@ -1,0 +1,27 @@
+{
+	"name": "i18n",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"poeditor": "node_modules/poeditor-sh/exports.sh src/config/poeditor.json",
+		"poeditor-setup": "node_modules/poeditor-sh/setup.sh",
+		"poeditor-list-projects":  "node_modules/poeditor-sh/list_projects.sh src/config/poeditor.json",
+		"poeditor-list-languages":  "node_modules/poeditor-sh/list_languages.sh src/config/poeditor.json"
+	},
+	"dependencies": {
+		"react": "15.4.1",
+		"react-native": "0.39.2",
+		"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
+	},
+	"devDependencies": {
+		"babel-jest": "18.0.0",
+		"babel-preset-react-native": "1.9.1",
+		"jest": "18.1.0",
+		"react-test-renderer": "15.4.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
