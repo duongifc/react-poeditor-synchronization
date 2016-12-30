@@ -3,7 +3,7 @@
 ### Installation
 
  * Open `package.json`
- * Add to `devDependencies:
+ * Add to `devDependencies`:
 ```json
 	"dependencies": {
 		"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
