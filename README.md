@@ -3,23 +3,22 @@
 ### Installation
 
  * Open `package.json`
- * Add to `devDependencies`:
-	```json
-		"dependencies": {
-			"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
-		}
-    	```
-	
- * Setup npm script
- 
-   ```json
-   	"scripts": {
+ * Add to `devDependencies:
+```json
+	"dependencies": {
+		"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
+	}
+```
+
+ * Setup npm script:
+```json
+	"scripts": {
 		"poeditor": "node_modules/poeditor-sh/exports.sh src/config/poeditor.json",
-    		"poeditor-setup": "node_modules/poeditor-sh/setup.sh",
+		"poeditor-setup": "node_modules/poeditor-sh/setup.sh",
 		"poeditor-list-projects": "node_modules/poeditor-sh/list_projects.sh src/config/poeditor.json",
 		"poeditor-list-languages": "node_modules/poeditor-sh/list_languages.sh src/config/poeditor.json"
 	}
-   ```
+```
    Example: `src/config/poeditor.json`
  * File contents are saved in the URL so you can share files
 
