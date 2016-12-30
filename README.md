@@ -22,7 +22,7 @@
    Example: `src/config/poeditor.json`
  * File contents are saved in the URL so you can share files
 
-RUN `poeditor-list-projects` TO SETUP REQUIREMENTS
+RUN `poeditor-setup` TO SETUP REQUIREMENTS
 
 Let's start with `CONFIG` json file:
 * `api_key`: get it from [POEdtior API].
