@@ -5,17 +5,15 @@
  * Open `package.json`
  * Add to `devDependencies`:
 	```json
-    "dependencies": {
-		...
+   	"dependencies": {
 		"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
 	}
     ```
  * Setup npm script
    ```json
-   "scripts": {
-		...
+   	"scripts": {
 		"poeditor": "node_modules/poeditor-sh/exports.sh src/config/poeditor.json",
-    "poeditor-setup": "node_modules/poeditor-sh/setup.sh",
+    		"poeditor-setup": "node_modules/poeditor-sh/setup.sh",
 		"poeditor-list-projects": "node_modules/poeditor-sh/list_projects.sh src/config/poeditor.json",
 		"poeditor-list-languages": "node_modules/poeditor-sh/list_languages.sh src/config/poeditor.json"
 	}
