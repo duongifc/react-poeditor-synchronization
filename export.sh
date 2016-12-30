@@ -8,6 +8,9 @@ FILE_NAME=$4
 FILE_FORMAT=$5
 FILE_PATH=$6
 
+cd ../../
+save_path="`pwd`/$FILE_PATH"
+
 content=$(node -pe 'JSON.parse(process.argv[1]).item' "$(curl -X POST https://poeditor.com/api/ \
      -d api_token="$API_KEY" \
      -d action="export" \
@@ -17,11 +20,11 @@ content=$(node -pe 'JSON.parse(process.argv[1]).item' "$(curl -X POST https://po
 
 seperator="_"
 
-if [ ! -d "$FILE_PATH" ]; then
-  mkdir $FILE_PATH
+if [ ! -d "$save_path" ]; then
+  mkdir $save_path
 fi
 
-path="$FILE_PATH/$FILE_NAME$seperator"
+path="$save_path/$FILE_NAME$seperator"
      if [ "$FILE_FORMAT" == "apple_strings" ]; then
        curl $content > "$path$LANGUAGE_CODE"
      elif [ "$FILE_FORMAT" == "android_strings" ]; then

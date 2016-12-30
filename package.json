@@ -1,5 +1,64 @@
 {
-	"name": "poeditor-sh",
-	"version": "0.0.1",
-	"private": true
+  "_args": [
+    [
+      {
+        "raw": "poeditor@git+https://github.com/duongifc/POEditor-sh.git",
+        "scope": null,
+        "escapedName": "poeditor",
+        "name": "poeditor",
+        "rawSpec": "git+https://github.com/duongifc/POEditor-sh.git",
+        "spec": "git+https://github.com/duongifc/POEditor-sh.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:duongifc/POEditor-sh.git",
+          "sshUrl": "git+ssh://git@github.com/duongifc/POEditor-sh.git",
+          "httpsUrl": "git+https://github.com/duongifc/POEditor-sh.git",
+          "gitUrl": "git://github.com/duongifc/POEditor-sh.git",
+          "shortcut": "github:duongifc/POEditor-sh",
+          "directUrl": "https://raw.githubusercontent.com/duongifc/POEditor-sh/master/package.json"
+        }
+      },
+      "/Users/duong.tran/Desktop/i18n"
+    ]
+  ],
+  "_from": "git+https://github.com/duongifc/POEditor-sh.git",
+  "_id": "poeditor-sh@0.0.1",
+  "_inCache": true,
+  "_location": "/poeditor-sh",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "poeditor@git+https://github.com/duongifc/POEditor-sh.git",
+    "scope": null,
+    "escapedName": "poeditor",
+    "name": "poeditor",
+    "rawSpec": "git+https://github.com/duongifc/POEditor-sh.git",
+    "spec": "git+https://github.com/duongifc/POEditor-sh.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:duongifc/POEditor-sh.git",
+      "sshUrl": "git+ssh://git@github.com/duongifc/POEditor-sh.git",
+      "httpsUrl": "git+https://github.com/duongifc/POEditor-sh.git",
+      "gitUrl": "git://github.com/duongifc/POEditor-sh.git",
+      "shortcut": "github:duongifc/POEditor-sh",
+      "directUrl": "https://raw.githubusercontent.com/duongifc/POEditor-sh/master/package.json"
+    }
+  },
+  "_requiredBy": [],
+  "_resolved": "git+https://github.com/duongifc/POEditor-sh.git#eda14f3fbb9489c5baeb61937ea637024af5da93",
+  "_shasum": "6828bd5549452f140aa02e5c9a0a61c8bbe21d1c",
+  "_shrinkwrap": null,
+  "_spec": "poeditor@git+https://github.com/duongifc/POEditor-sh.git",
+  "_where": "/Users/duong.tran/Desktop/i18n",
+  "dependencies": {},
+  "description": "Supported format:     android_strings     apple_strings     json",
+  "devDependencies": {},
+  "gitHead": "eda14f3fbb9489c5baeb61937ea637024af5da93",
+  "name": "poeditor-sh",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "Supported format:\n    android_strings\n    apple_strings\n    json\n",
+  "readmeFilename": "README.md",
+  "version": "0.0.1"
 }
