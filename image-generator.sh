@@ -18,6 +18,10 @@ do
     fileNameWithoutFormat="${filename%.*}"
 
     fileNameWithoutFormat="${fileNameWithoutFormat/\-/_}"
+    fileNameWithoutFormat="${fileNameWithoutFormat/\-/_}"
+    fileNameWithoutFormat="${fileNameWithoutFormat/\-/_}"
+    fileNameWithoutFormat="${fileNameWithoutFormat/\-/_}"
+    fileNameWithoutFormat="${fileNameWithoutFormat/\-/_}"
 
     echo -e "\t$fileNameWithoutFormat: require('./images/$filename')," >> $output_path
 done
