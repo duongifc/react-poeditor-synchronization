@@ -7,16 +7,16 @@ LANGUAGE_CODE=$3
 FILE_NAME=$4
 FILE_FORMAT=$5
 FILE_PATH=$6
+TYPE=$7
 
 cd ../../
 save_path="`pwd`/$FILE_PATH"
 
-content=$(node -pe 'JSON.parse(process.argv[1]).item' "$(curl -X POST https://poeditor.com/api/ \
+content=$(node -pe 'JSON.parse(process.argv[1]).result.url' "$(curl -X POST https://api.poeditor.com/v2/projects/export \
      -d api_token="$API_KEY" \
-     -d action="export" \
      -d id="$PROJECT_ID" \
      -d language="$LANGUAGE_CODE" \
-     -d type="$FILE_FORMAT")")
+     -d type="$TYPE")")
 
 seperator="_"
 
@@ -30,8 +30,5 @@ path="$save_path/$FILE_NAME$seperator"
      elif [ "$FILE_FORMAT" == "android_strings" ]; then
        curl $content > "$path$LANGUAGE_CODE.xml"
      else
-       fileName="temp.json"
-       curl $content > $fileName
-
-       echo $(cat $fileName | jq '.[] | {(.term) : (.definition)}') | jq --slurp 'reduce .[] as $item ({}; . * $item)' > "$path$LANGUAGE_CODE.$FILE_FORMAT"
+       curl $content > "$path$LANGUAGE_CODE.$FILE_FORMAT"
      fi
