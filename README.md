@@ -6,17 +6,17 @@
  * Add to `devDependencies`:
 ```json
 	"dependencies": {
-		"poeditor": "git+https://github.com/duongifc/POEditor-sh.git"
+    "poeditor": "git+https://github.com/andonivianez/react-poeditor-synchronization.git",
 	}
 ```
 
  * Setup npm script:
 ```json
 	"scripts": {
-		"poeditor": "node_modules/poeditor-sh/exports.sh src/config/poeditor.json",
-		"poeditor-setup": "node_modules/poeditor-sh/setup.sh",
-		"poeditor-list-projects": "node_modules/poeditor-sh/list_projects.sh src/config/poeditor.json",
-		"poeditor-list-languages": "node_modules/poeditor-sh/list_languages.sh src/config/poeditor.json"
+		"poeditor": "node_modules/poeditor/exports.sh src/config/poeditor.json",
+		"poeditor-setup": "node_modules/poeditor/setup.sh",
+		"poeditor-list-projects": "node_modules/poeditor/list_projects.sh src/config/poeditor.json",
+		"poeditor-list-languages": "node_modules/poeditor/list_languages.sh src/config/poeditor.json"
 	}
 ```
    Example: `src/config/poeditor.json`
@@ -30,14 +30,16 @@ Let's start with `CONFIG` json file:
 * `languages: run command `npm run poeditor-list-languages` to get list of language ids.
 * `file_format`: apple_strings, android_strings, json
 * `path`: saved path for return data from POEditor
+* `type`: key_value_json to get an structured json key-value file compatible with most platforms like React Native
 ```json
 {
   "api_key": "0791fc384c6011ddfa7df3656ffd6529",
   "project_id": "79427",
-  "languages": "en,vi",
-  "file_format": "json",
-  "file_name": "Localize",
-  "path": "src/i18n"
+  "languages": "en,es",
+  "type": "key_value_json",
+  "file_name": "strings",
+  "path": "src/i18n",
+  "file_format": "json"
 }
 
 ```
